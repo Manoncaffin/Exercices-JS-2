@@ -8,5 +8,13 @@
   <form>
     <label for="lastname">Votre nom  : </label><input type="text" name="lastname" id="lastname" />
   </form>
+
+<script>
+  const input = document.querySelector('#lastname');
+  input.addEventListener('keyup', (event) => {
+    alert(event.key);
+  })
+</script>
+
 </body>
 </html>
