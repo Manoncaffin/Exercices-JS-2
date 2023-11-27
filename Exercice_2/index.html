@@ -5,8 +5,18 @@
   <title>Exercice 2</title>
 </head>
 <body>
-  <form>
-    <label for="lastname">Votre nom  : </label><input type="text" name="lastname" id="lastname"/>
+  <form id>
+    <label for="lastname">Votre nom  : </label><input type="text" name="lastname" id="lastname" onblur="confirm()"/>
   </form>
+
+  <script>
+    function confirm() {
+    let message = 'Merci de votre participation';
+    alert(message);
+  }
+   </script>
+
+
+
 </body>
 </html>
